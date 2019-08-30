@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Convertidor de divisas</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="conversorDivisas.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../main.css">
+	<script type="text/javascript" src="conversorDivisas.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<h1>IC8057 Introducción al desarrollo de aplicaciones WEB, IISem 2019</h1>
+		<p><b>Portafolio</b> de trabajos</p>
+	</div>
+
+	<div class="navbar">
+		<a href="../index.html" class="active right">Informacion</a>
+		<a href="../practica_de_clase.html">Prácticas de clase</a>
+		<a href="../tareas.html">Tareas</a>
+		<a href="../laboratorios.html">Laboratorios</a>
+	</div>
+
+	<h2>Semana 5: Convertidor de divisas</h2>
+	<div id="convertidorDivisas">
+		<table id="informacionPaises">
+			<tr>
+				<th><img src="img/Estados_Unidos.png"></th>
+				<th><img src="img/Francia.png"></th>
+				<th><img src="img/Japon.png"></th>
+				<th><img src="img/Reino_Unido.png"></th>
+				<th><img src="img/Suiza.png"></th>
+				<th><img src="img/Australia.png"></th>
+				<th><img src="img/Canada.png"></th>
+				<th><img src="img/Mexico.png"></th>
+				<th><img src="img/China.png"></th>
+				<th><img src="img/Costa_Rica.png"></th>
+			</tr>
+			<tr>
+				<td>Estados Unidos</td>
+				<td>Francia</td>
+				<td>Japón</td>
+				<td>Reino Unido</td>
+				<td>Suiza</td>
+				<td>Australia</td>
+				<td>Canadá</td>
+				<td>México</td>
+				<td>China</td>
+				<td>Costa Rica</td>
+			</tr>
+			<tr id="monedas">
+				<td>Dólar estadounidense</td>
+				<td>Euro</td>
+				<td>Yen</td>
+				<td>Libra esterlina</td>
+				<td>Franco suizo</td>
+				<td>Dólar australiano</td>
+				<td>Dólar canadiense</td>
+				<td>Peso mexicano</td>
+				<td>Yuan chino</td>
+				<td>Colón costarricense</td>
+			</tr>
+			<tr id="abreviaturas">
+				<td>USD</td>
+				<td>EUR</td>
+				<td>JPY</td>
+				<td>GBP</td>
+				<td>CHF</td>
+				<td>AUD</td>
+				<td>CAD</td>
+				<td>MXN</td>
+				<td>CNY</td>
+				<td>CRC</td>
+			</tr>
+			<tr>
+				<td><button onclick="mostrar_estrella('imagen')"><img id="imagen" src="img/Star.png"></button></td>
+				<td><button onclick="mostrar_estrella('imagen1')"><img id="imagen1" src="img/Star.png"></button></td>
+				<td><button onclick="mostrar_estrella('imagen2')"><img id="imagen2" src="img/Star.png"></button></td>
+				<td><button onclick="mostrar_estrella('imagen3')"><img id="imagen3" src="img/Star.png"></button></td>
+				<td><button onclick="mostrar_estrella('imagen4')"><img id="imagen4" src="img/Star.png"></button></td>
+				<td><button onclick="mostrar_estrella('imagen5')"><img id="imagen5" src="img/Star.png"></button></td>
+				<td><button onclick="mostrar_estrella('imagen6')"><img id="imagen6" src="img/Star.png"></button></td>
+				<td><button onclick="mostrar_estrella('imagen7')"><img id="imagen7" src="img/Star.png"></button></td>
+				<td><button onclick="mostrar_estrella('imagen8')"><img id="imagen8" src="img/Star.png"></button></td>
+				<td><button onclick="mostrar_estrella('imagen9')"><img id="imagen9" src="img/Star.png"></button></td>
+			</tr>
+			<tr id="cantidades">
+				<td><input type="number" id="cantidad" min="0"></td>
+				<td><input type="number" id="cantidad1" min="0"></td>
+				<td><input type="number" id="cantidad2" min="0"></td>
+				<td><input type="number" id="cantidad3" min="0"></td>
+				<td><input type="number" id="cantidad4" min="0"></td>
+				<td><input type="number" id="cantidad5" min="0"></td>
+				<td><input type="number" id="cantidad6" min="0"></td>
+				<td><input type="number" id="cantidad7" min="0"></td>
+				<td><input type="number" id="cantidad8" min="0"></td>
+				<td><input type="number" id="cantidad9" min="0"></td>
+			</tr>
+		</table>
+
+		<br>
+		<br>
+
+		<button style="margin-left: 850px" onclick="convertidor_divisas()"><img id="convertir_divisas" src="img/cambio_divisas.png"></button>
+		<button style="margin-left: 50px" onclick="limpiar_estrellas()"><img id="limpiar" src="img/limpiar_campos.png"></button>
+
+		<br>
+		<br>
+		<br>
+		<div class="footer">
+			<h4>Fecha de creacion: 26 de agosto del 2019</h4>
+			<h4>Referencias: https://www.w3schools.com/</h4>
+			<p>Carné: 2015087856</p>
+		</div>
+	</div>
+</body>
+
+</html>
