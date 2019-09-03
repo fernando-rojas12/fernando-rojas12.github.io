@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Website Electiva</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/main.css" media="all">
+    <style>
+        h2 {
+      text-shadow: 3px 2px red;
+    }
+
+    h3 {
+      word-spacing: 10px;
+    }
+
+    h4 {
+      letter-spacing: 3px;
+    }
+
+    h5 {
+      text-decoration: line-through;
+    }
+
+    p.serif {
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    p.normal {
+      font-style: normal;
+    }
+
+    p.ex1 {
+      direction: rtl;
+    }
+
+    p.small {
+      line-height: 0.7;
+    }
+
+    p {
+      text-indent: 50px;
+    }
+
+    p.uppercase {
+      text-transform: uppercase;
+    }
+
+    div.justify {
+      border: 1px solid black;
+      padding: 10px;
+      width: 200px;
+      height: 200px;
+      text-align: justify;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>IC8057 Introducción al desarrollo de aplicaciones WEB, IISem 2019</h1>
+        <p><b>Portafolio</b> de trabajos</p>
+    </div>
+    <div class="navbar">
+        <a href="../index.html" class="active right">Informacion</a>
+        <a href="../practica_de_clase.html">Prácticas de clase</a>
+        <a href="../tareas.html">Tareas</a>
+        <a href="../laboratorios.html">Laboratorios</a>
+    </div>
+    <h2>Semana 3: Sintaxis HTML5 y CSS3</h2>
+    <div class="row">
+        <div class="main1">
+            <h3>HTML estándar</h3>
+            <table>
+                <colgroup>
+                    <col style="background-color:#f1f1f1">
+                    <col style="background-color:#f1f1f1">
+                    <col style="background-color:#f1f1f1">
+                    <col style="background-color:#f1f1f1">
+                    <col style="background-color:#f1f1f1">
+                </colgroup>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Proposito</th>
+                    <th>Sintaxis</th>
+                    <th>Atributos</th>
+                    <th>Ejemplo</th>
+                </tr>
+                <tr>
+                    <td>Heading tag</td>
+                    <td>Define encabezados HTML</td>
+                    <td>
+                        <xmp>
+                            <h4>Statements...</h4>
+                        </xmp>
+                    </td>
+                    <td>align</td>
+                    <td>
+                        <h4>Statements...</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Paragraph tag</td>
+                    <td>Define un párrafo</td>
+                    <td>
+                        <xmp>
+                            <p>Statements...</p>
+                        </xmp>
+                    </td>
+                    <td>align</td>
+                    <td>
+                        <p>Statements...</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Emphasis tag</td>
+                    <td>Define el texto enfatizado</td>
+                    <td>
+                        <xmp>
+                            <em>Statements...</em>
+                        </xmp>
+                    </td>
+                    <td>-</td>
+                    <td>
+                        <em>Statements...</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bold tag</td>
+                    <td>Define el texto en negrita</td>
+                    <td>
+                        <xmp>
+                            <b>Statements...</b>
+                        </xmp>
+                    </td>
+                    <td>-</td>
+                    <td>
+                        <b>Statements...</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Italic tag</td>
+                    <td>Define una parte del texto con una voz o estado de ánimo alternativo</td>
+                    <td>
+                        <xmp>
+                            <i>Statements...</i>
+                        </xmp>
+                    </td>
+                    <td>-</td>
+                    <td>
+                        <i>Statements...</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Small(text)tag</td>
+                    <td>Define texto más pequeño</td>
+                    <td>
+                        <xmp>
+                            <small>Statements...</small>
+                        </xmp>
+                    </td>
+                    <td>-</td>
+                    <td>
+                        <small>Statements...</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Underline tag</td>
+                    <td>Define el texto que debe ser estilísticamente diferente del texto normal</td>
+                    <td>
+                        <xmp>
+                            <u>Statements...</u>
+                        </xmp>
+                    </td>
+                    <td>-</td>
+                    <td>
+                        <u>Statements...</u>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Deleted text tag</td>
+                    <td>Define el texto tachado</td>
+                    <td>
+                        <xmp>
+                            <strike>Statements...</strike>
+                        </xmp>
+                    </td>
+                    <td>-</td>
+                    <td>
+                        <strike>Statements...</strike>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Anchor tag</td>
+                    <td>Define un hiperenlace</td>
+                    <td>
+                        <xmp>
+                            <a href="...">Statements...</a>
+                        </xmp>
+                    </td>
+                    <td>href, download, rel, type, target</td>
+                    <td>
+                        <a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>List tag</td>
+                    <td>Define un elemento de la lista</td>
+                    <td>
+                        <xmp>
+                            <li>Statements...</li>
+                        </xmp>
+                    </td>
+                    <td>type, value</td>
+                    <td>
+                        <li>List item 1</li>
+                        <li>List item 2</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ordered List tag</td>
+                    <td>Se utiliza para definir el encabezado del documento html.</td>
+                    <td>
+                        <xmp>
+                            <ol>Statements...</ol>
+                        </xmp>
+                    </td>
+                    <td>compact, reversed, start, type</td>
+                    <td>
+                        <ol>
+                            <li>List item A</li>
+                            <li>List item B</li>
+                            <li>List item C</li>
+                            <li>List item D</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Center tag</td>
+                    <td>Define el texto centrado</td>
+                    <td>
+                        <xmp>
+                            <center>Statements...</center>
+                        </xmp>
+                    </td>
+                    <td>-</td>
+                    <td>
+                        <center>GeeksforGeeks</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Font tag</td>
+                    <td>Define la fuente, el color y el tamaño del texto</td>
+                    <td>
+                        <xmp>
+                            <font>Statements...<font>
+                        </xmp>
+                    </td>
+                    <td>color, face, size</td>
+                    <td>
+                        <font face="Times New Roman">Example</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Image tag</td>
+                    <td>Se utiliza para definir el encabezado del documento html.</td>
+                    <td>
+                        <xmp>
+                            <h1>Statements...</h1>
+                        </xmp>
+                    </td>
+                    <td>align</td>
+                    <td>
+                        <h4>This is heading 4</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Heading tag</td>
+                    <td>Define una imagen</td>
+                    <td>
+                        <xmp>
+                            <img>
+                        </xmp>
+                    </td>
+                    <td>src, width, alt, height, longdesc</td>
+                    <td>
+                        <img src="foto.jpg" width="40" height="40" border="0">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="main2">
+            <h3>HTML5</h3>
+            <table>
+                <colgroup>
+                    <col style="background-color:white">
+                    <col style="background-color:white">
+                    <col style="background-color:white">
+                    <col style="background-color:white">
+                    <col style="background-color:white">
+                </colgroup>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Proposito</th>
+                    <th>Sintaxis</th>
+                    <th>Atributos</th>
+                    <th>Ejemplo</th>
+                </tr>
+                <tr>
+                    <td>Header tag</td>
+                    <td>Define una cabecera para un documento o una sección</td>
+                    <td>
+                        <xmp>
+                            <header>Statements...</header>
+                        </xmp>
+                    </td>
+                    <td>-</td>
+                    <td>
+                        <h4>-</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Footer tag</td>
+                    <td>Define un pie de página para un documento o una sección</td>
+                    <td>
+                        <xmp>
+                            <footer>Statements...</footer>
+                        </xmp>
+                    </td>
+                    <td>-</td>
+                    <td>
+                        <h4>-</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Article tag</td>
+                    <td>Define un artículo</td>
+                    <td>
+                        <xmp>
+                            <article>Statements...</article>
+                        </xmp>
+                    </td>
+                    <td>-</td>
+                    <td>
+                        <h4>-</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Section tag</td>
+                    <td>Define una sección en un documento</td>
+                    <td>
+                        <xmp>
+                            <section>Statements...</section>
+                        </xmp>
+                    </td>
+                    <td>-</td>
+                    <td>
+                        <h4>-</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Svg tag</td>
+                    <td>Define un contenedor para gráficos SVG</td>
+                    <td>
+                        <xmp>
+                            <svg>Statements...</svg>
+                        </xmp>
+                    </td>
+                    <td>width, height, stroke, fill</td>
+                    <td>
+                        <svg width="100" height="100">
+                            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Canvas tag</td>
+                    <td>Se utiliza para dibujar gráficos, sobre la marcha, a través de scripts (normalmente JavaScript)</td>
+                    <td>
+                        <xmp>
+                            <canvas id="myCanvas"></canvas>
+                        </xmp>
+                    </td>
+                    <td>height, width</td>
+                    <td>
+                        <canvas id="myCanvas"></canvas>
+                        <script>
+                            var canvas = document.getElementById("myCanvas");
+              var ctx = canvas.getContext("2d");
+              ctx.fillStyle = "#FF0000";
+              ctx.fillRect(0, 0, 80, 80);
+            </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Audio tag</td>
+                    <td>Define el contenido de sonido</td>
+                    <td>
+                        <xmp>
+                            <audio>Statements...</audio>
+                        </xmp>
+                    </td>
+                    <td>controls, autoplay, loop, src, muted</td>
+                    <td>
+                        <audio controls>
+                            <source src="horse.ogg" type="audio/ogg">
+                            <source src="horse.mp3" type="audio/mpeg">
+                            Your browser does not support the audio tag.
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Video tag</td>
+                    <td>Define un vídeo o película</td>
+                    <td>
+                        <xmp>
+                            <video>Statements...</video>
+                        </xmp>
+                    </td>
+                    <td>width, height, controls, src, type</td>
+                    <td>
+                        <video width="320" height="240" controls>
+                            <source src="movie.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Details tag</td>
+                    <td>Define los detalles adicionales que el usuario puede ver u ocultar</td>
+                    <td>
+                        <xmp>
+                            <details>Statements...</details>
+                        </xmp>
+                    </td>
+                    <td>open</td>
+                    <td>
+                        <details>
+                            <summary>Copyright 1999-2018.</summary>
+                            <p> - by Refsnes Data. All Rights Reserved.</p>
+                            <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+                        </details>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Form element time</td>
+                    <td>Define una fecha/hora</td>
+                    <td>
+                        <xmp>
+                            <time>Statements...</time>
+                        </xmp>
+                    </td>
+                    <td>datetime</td>
+                    <td>
+                        <p>We open at <time>10:00</time> every morning.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Progress tag</td>
+                    <td>Representa el progreso de una tarea</td>
+                    <td>
+                        <xmp>
+                            <progress>Statements...</progress </xmp> </td> <td>value, max
+                    </td>
+                    <td>
+                        <progress value="22" max="100"></progress>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Meter tag</td>
+                    <td>Define una medición escalar dentro de un rango conocido (un medidor)</td>
+                    <td>
+                        <xmp>
+                            <meter>Statements...</meter>
+                        </xmp>
+                    </td>
+                    <td>value, min, max, form, optimum</td>
+                    <td>
+                        <meter value="2" min="0" max="10">2 out of 10</meter><br>
+                        <meter value="0.6">60%</meter>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mark tag</td>
+                    <td>Define el texto marcado/resaltado</td>
+                    <td>
+                        <xmp>
+                            <mark>Statements...</mark>
+                        </xmp>
+                    </td>
+                    <td>-</td>
+                    <td>
+                        <p>Do not forget to buy <mark>milk</mark> today.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DOCTYPE declaration</td>
+                    <td>Se utiliza para definir el encabezado del documento html.</td>
+                    <td>
+                        <xmp>
+                            <!DOCTYPE html>
+                        </xmp>
+                    </td>
+                    <td>align</td>
+                    <td>
+                        -
+                    </td>
+                </tr>
+                <tr>
+                    <td>Character encoding</td>
+                    <td>Se utiliza para definir el encabezado del documento html.</td>
+                    <td>
+                        <xmp>
+                            <meta charset="UTF-8">
+                        </xmp>
+                    </td>
+                    <td>align</td>
+                    <td>
+                        -
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="main3">
+            <h3>CSS3</h3>
+            <table>
+                <colgroup>
+                    <col style="background-color:#f1f1f1">
+                    <col style="background-color:#f1f1f1">
+                    <col style="background-color:#f1f1f1">
+                    <col style="background-color:#f1f1f1">
+                    <col style="background-color:#f1f1f1">
+                </colgroup>
+                <tr>
+                    <th>Propiedad</th>
+                    <th>Descripcion</th>
+                    <th>Rango de valores</th>
+                    <th>Ejemplo</th>
+                </tr>
+                <tr>
+                    <td>Background Color</td>
+                    <td>Especifica el color de fondo de un elemento.</td>
+                    <td>lightblue, red, white, yellow...</td>
+                    <td>
+                        <h4>-</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Background Image</td>
+                    <td>Especifica una imagen para usar como fondo de un elemento.</td>
+                    <td>url</td>
+                    <td>
+                        <h4>-</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Background Image - no-repeat - Repeat Horizontally or Vertically</td>
+                    <td>Especifica mostrar la imagen de fondo sólo una vez.</td>
+                    <td>no-repeat, repeat-x</td>
+                    <td>
+                        <h4>-</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Background Image - Set position</td>
+                    <td>Especifica la posición de la imagen de fondo.</td>
+                    <td>right top</td>
+                    <td>
+                        <h4>-</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Background Image - Fixed or Scroll?</td>
+                    <td>Especifica si la imagen de fondo debe desplazarse o ser fija</td>
+                    <td>fixed, scroll</td>
+                    <td>
+                        <h4>-</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Background - Shorthand property</td>
+                    <td>Especifica todas las propiedades de fondo en una sola propiedad</td>
+                    <td>#ffffff url("img_tree.png") no-repeat right top</td>
+                    <td>
+                        <h4>-</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Text Color</td>
+                    <td>Puede establecer el color del texto</td>
+                    <td>Tomato, DodgerBlue, MediumSeaGreen...</td>
+                    <td>
+                        <h1 style="color:Tomato;">Hello World</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Border Color</td>
+                    <td>Puede establecer el color de los bordes</td>
+                    <td>2px solid Tomato, 2px solid DodgerBlue, 2px solid Violet...</td>
+                    <td>
+                        <h1 style="border:2px solid Tomato;">Hello World</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Color Values</td>
+                    <td>Los colores también se pueden especificar utilizando valores RGB, valores HEX, valores HSL, valores RGBA y valores HSLA.</td>
+                    <td>background-color:rgb(255, 99, 71), background-color:#ff6347, background-color:hsl(9, 100%, 64%)...</td>
+                    <td>
+                        <h1 style="background-color:DodgerBlue;">Hello World</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Text Alignment</td>
+                    <td>Permite establecer la alineación horizontal de un texto.</td>
+                    <td>center, left, right...</td>
+                    <td>
+                        <div class="justify">
+                            In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Text Decoration</td>
+                    <td>Se utiliza para fijar o quitar decoraciones del texto.</td>
+                    <td>none, overline, line-through, underline...</td>
+                    <td>
+                        <h5>This is heading 2</h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Text Transformation</td>
+                    <td>Se utiliza para especificar letras mayúsculas y minúsculas en un texto.</td>
+                    <td>uppercase, lowercase, capitalize...</td>
+                    <td>
+                        <p class="uppercase">This is some text.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Text Indentation</td>
+                    <td>Se utiliza para especificar la sangría de la primera línea de un texto</td>
+                    <td>50px...</td>
+                    <td>
+                        <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Letter Spacing</td>
+                    <td>Se utiliza para especificar el espacio entre los caracteres de un texto.</td>
+                    <td>3px, -3px...</td>
+                    <td>
+                        <h4>This is heading 1</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Line Height</td>
+                    <td>Se usa para especificar el espacio entre líneas</td>
+                    <td>0.8, 1.8...</td>
+                    <td>
+                        <p class="small">
+                            This is a paragraph with a smaller line-height.<br>
+                            This is a paragraph with a smaller line-height.<br>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Text Direction</td>
+                    <td>Permite cambiar la dirección del texto de un elemento</td>
+                    <td>rtl...</td>
+                    <td>
+                        <p>This is the default text direction.</p>
+                        <p class="ex1"><bdo dir="rtl">This is right-to-left text direction.</bdo></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Word Spacing</td>
+                    <td>Se usa para especificar el espacio entre las palabras de un texto</td>
+                    <td>10px, -5px...</td>
+                    <td>
+                        <h3>This is heading 1</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Text Shadow</td>
+                    <td>Agrega sombra al texto.</td>
+                    <td>3px 2px red...</td>
+                    <td>
+                        <h2>Text-shadow effect</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Font Family</td>
+                    <td>Se utiliza para especificar el texto en cursiva.</td>
+                    <td>normal, italic, oblique</td>
+                    <td>
+                        <p class="serif">This is a paragraph, shown in the Times New Roman font.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Font Style</td>
+                    <td>Establece el tamaño del texto</td>
+                    <td>40px, 30px, 14px</td>
+                    <td>
+                        <p class="normal">This is a paragraph in normal style.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <h4>Fecha de creacion: 12 de agosto del 2019</h4>
+        <h4>Referencias</h4>
+        <p>Carné: 2015087856</p>
+    </div>
+</body>
+
+</html>

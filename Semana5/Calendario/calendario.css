@@ -1,0 +1,65 @@
+* {
+    font-family: arial, sans-serif;
+}
+
+table {
+    background-color: #ffffff;
+    filter: alpha(opacity=40);
+    opacity: 0.95;
+    border: 1px solid black;
+}
+
+td,
+th {
+    text-align: center;
+    padding: 20px;
+}
+
+#posterior,
+#anterior,
+#titulos {
+    font-weight: bold;
+}
+
+#fila0 {
+    background-color: #5ec1df;
+    color: #776fb8;
+}
+
+#fechaactual {
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+#buscafecha {
+    background-color: #654269;
+    color: #97e0ea;
+}
+
+#buscames,
+#buscarInput,
+#buscaanno {
+    background-color: #97e0ea;
+    color: #654269;
+    font-weight: bold;
+    text-align: center;
+}
+
+#titulo,
+#buscarForm {
+    text-align: center;
+}
+
+#areaTotal {
+    border-style: double;
+    margin-right: 705px;
+    margin-left: 705px;
+}
+
+.box {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 24px;
+    padding-left: 24px;
+}
