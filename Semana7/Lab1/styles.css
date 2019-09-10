@@ -1,0 +1,160 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    /* background-color: #D5D8DC; */
+    /* background-color: #9CCC65; */
+    background-color: #273746;
+}
+
+#nav_container {}
+
+#menu li a:hover {}
+
+.carousel-item {
+    width: 100%;
+    height: 400px;
+}
+
+.carousel-inner {
+    border-radius: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+}
+
+section {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+section .container {
+    position: relative;
+    z-index: 2;
+}
+
+section .overlay-wcs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.nav-tabs {
+    border-bottom: solid 4px white;
+}
+
+.nav-tabs .nav-item,
+.nav-tabs .nav-link {
+    background-color: #9CCC65;
+    /* background-color: #273746; */
+    color: #1B5E20;
+    /* color: white; */
+    font-size: 18px;
+    padding-top: 10px;
+    /* color: black; */
+    border: none;
+}
+
+.nav-tabs .nav-link:hover {
+    border-bottom: solid 10px #1B5E20;
+}
+
+.nav-tabs .nav-link.active {
+    color: white;
+    /* background-color: #6D4C41; */
+    background-color: #9CCC65;
+    /* background-color: #273746; */
+    border-bottom: solid 10px #1B5E20;
+    /* border-bottom: solid 8px #9CCC65; */
+}
+
+.featurette {
+    color: white;
+}
+
+.featurette-divider {
+    border: 1px solid white;
+}
+
+#team .card i {
+    color: #34495E;
+}
+
+#team img {
+    margin-top: -30%;
+}
+
+#team .card {
+    box-shadow: 8px 8px #9CCC65;
+    transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+}
+
+#team .card:hover {
+    background-color: #9CCC65;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 8px 8px white;
+}
+
+#team .card .card-text {
+    font-size: 18px;
+}
+
+#team .card:hover i {
+    color: white;
+}
+
+#team .card .card-subtitle {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+#logo {
+    background-color: white;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.source-publication {
+    text-decoration: none;
+    color: #28A745;
+}
+
+a:hover.source-publication {
+    color: white;
+    text-decoration: none;
+}
